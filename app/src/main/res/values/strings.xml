@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Weather App</string>
+    <string name="logo">Сегодня тигры выгуливаются в : </string>
+    <string name="hint_user_field">Введите город для выгула </string>
+    <string name="main_button">Погода </string>
+    <string name="no_user_imput">Введите текст </string>
+    <string name="email">Введите email</string>
+    <string name="mur_btn">МурМя</string>
+    <string name="next_activity">Прогноз погоды</string>
+    <string name="back_activity">Вернуться</string>
+    <string name="weatherOnWeek">Погода на 4 дня</string>
+    <string name="weather">Погода: </string>
+
+</resources>

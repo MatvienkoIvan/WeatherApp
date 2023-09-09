@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainTheme"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/mainText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="monospace"
+        android:text="@string/logo"
+        android:textAlignment="center"
+        android:textColor="@color/mainText"
+        android:textSize="30dp" />
+
+
+    <EditText
+        android:id="@+id/user_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mainText"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="100dp"
+        android:backgroundTint="@color/Button"
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:hint="@string/hint_user_field"
+        android:inputType="textPersonName"
+
+        android:minHeight="48dp" />
+
+    <Button
+        android:id="@+id/mainButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_field"
+        android:layout_marginHorizontal="130dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/Button"
+        android:fontFamily="monospace"
+        android:text="@string/main_button"
+
+        />
+
+    <TextView
+        android:id="@+id/resultInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mainButton"
+        android:layout_marginTop="100dp"
+        android:fontFamily="monospace"
+        android:textAlignment="center"
+        android:textColor="@color/mainText"
+        android:textSize="20dp" />
+    <TextView
+        android:id="@+id/weatherPhraseTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/mainText"
+        android:fontFamily="monospace"
+        android:textAlignment="center"
+        android:text=""
+        android:layout_below="@+id/resultInfo"
+        android:padding="18dp" />
+
+    <Button
+        android:id="@+id/nextActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/weatherPhraseTextView"
+        android:layout_marginHorizontal="130dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/Button"
+        android:fontFamily="monospace"
+        android:text="@string/next_activity"
+/>
+</RelativeLayout>
