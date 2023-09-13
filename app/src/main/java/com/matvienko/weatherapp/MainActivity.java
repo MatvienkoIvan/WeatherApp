@@ -24,32 +24,30 @@ public class MainActivity extends AppCompatActivity {
 
     private EditText user_field;
 
-    private Button mainButton;
     private TextView resultInfo;
     private TextView weatherPhraseTextView;
-    private Button nextActivity;
-    private String[] weatherPhrasesSunny = {
+    private final String[] weatherPhrasesSunny = {
             "Сегодня солнце светит так ярко, что тигры могут полежать на теплой земле и расслабиться.",
             "Тепло и ясно, идеальное время для игры тигров в их виртуозные игры на свежем воздухе.",
             "Ясное небо и теплое солнышко – как раз то, что нужно молодым тигрятам для забавных страхов от собственной тени.",
             "Тигры обожают солнечные дни, когда их полоски блеснут особенно ярко!",
             "Сегодня погода такая же зажигательная, как игра бодрых тигров в лесу."
     };
-    private String[] weatherPhrasesRainy = {
+    private final String[] weatherPhrasesRainy = {
             "Пасмурный день не помеха для игр тигров – они точно найдут, что делать во время дождя.",
             "Серые облака только подчеркивают яркие полоски тигров, делая их еще более выразительными.",
             "Дождь не останавливает настоящих тигров – они могут отправиться в лес на свои незабываемые приключения даже в такую погоду.",
             "Пасмурная погода создает таинственную атмосферу в лесу, словно зовет тигров на разведку новых мест.",
             "Дождливый день – прекрасная возможность для тигров проявить свою изобретательность и находчивость в играх."
     };
-    private String[] weatherPhrasesSnowy = {
+    private final String[] weatherPhrasesSnowy = {
             "Белоснежный покров снега как будто создан специально для скрытных движений великих тигров.",
             "Тихая зимняя погода приглашает тигров на забавные гонки по снежным полям.",
             "Снежная стихия не пугает тигров – они, напротив, находят в ней особое волшебство.",
             "Тигры с легкостью приспосабливаются к холоду и снегу, благодаря своим мощным телам и густой шерсти.",
             "Снег под лапами, зимний ветер в морде – такие дни тигры ощущают себя настоящими хозяевами зимнего леса."
     };
-    private String[] weatherPhrasesModerate = {
+    private final String[] weatherPhrasesModerate = {
             "Сегодня на улице тепло, как объятия тигра, идеальное время для активных прогулок.",
             "Температура воздуха такая приятная, что даже тигры могут себе позволить небольшую дрему на солнышке.",
             "День не слишком жаркий, не слишком холодный – идеальное время для тигров охотиться на впечатления.",
@@ -61,11 +59,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        nextActivity = findViewById(R.id.nextActivity);
+        Button nextActivity = findViewById(R.id.nextActivity);
 
         weatherPhraseTextView = findViewById(R.id.weatherPhraseTextView);
         user_field =findViewById(R.id.user_field);
-        mainButton = findViewById(R.id.mainButton);
+        Button mainButton = findViewById(R.id.mainButton);
         resultInfo = findViewById(R.id.resultInfo);
         mainButton.setOnClickListener (new View.OnClickListener() {
             @Override
