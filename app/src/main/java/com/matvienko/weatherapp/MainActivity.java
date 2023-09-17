@@ -72,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(MainActivity.this, R.string.no_user_imput, Toast.LENGTH_LONG).show();
                 else {
                     String city = user_field.getText().toString();
-                    String key = "78c896f95e6e4763ef01d93f2621c3eb";
+                    String key = "78c896f95e6e4763ef01d93f2621c3eb"; // https://api.openweathermap.org/data/2.5/weather?q=Moscow&appid=78c896f95e6e4763ef01d93f2621c3eb&units=metric";
                     String url = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + key + "&units=metric";
 
                     new GetURLData().execute(url);

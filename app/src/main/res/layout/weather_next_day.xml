@@ -41,6 +41,15 @@
             android:minHeight="48dp" />
 
         <TextView
+            android:id="@+id/dayOne"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/weather"
+            android:textSize="20sp"
+
+            />
+
+        <TextView
             android:id="@+id/dayTwo"
             android:layout_width="match_parent"
             android:layout_height="50dp"
@@ -57,23 +66,23 @@
             android:textSize="20dp"
 
             />
-
         <TextView
             android:id="@+id/dayFour"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:text="@string/weather"
-            android:textSize="20dp"
+            android:textSize="20sp"
 
             />
-        <TextView
-            android:id="@+id/dayFive"
+        <Button
+            android:id="@+id/weather_four_days"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:text="@string/weather"
-            android:textSize="20dp"
-
-            />
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="70dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/Button"
+            android:fontFamily="monospace"
+            android:text="@string/main_button" />
         <Button
             android:id="@+id/mur_btn"
             android:layout_width="match_parent"
